@@ -1,0 +1,24 @@
+{
+    "copyright": {
+        "prefix": "spdx",
+        "description": "SPDX Header",
+        "body": [
+            "$LINE_COMMENT SPDX-FileCopyrightText: © $CURRENT_YEAR woifes <https://github.com/woifes>",
+            "$LINE_COMMENT SPDX-License-Identifier: ${1|MIT,AGPL-3.0-or-later,LGPL-3.0,UNLICENSED|}"
+        ]
+    },
+    "importRuntypes": {
+        "prefix": "imrt",
+        "description": "import runtypes as rt",
+        "body": ["import * as rt from \"runtypes\";"]
+    },
+    "createRuntype": {
+        "prefix": "crrt",
+        "description": "creates a runtype with its typescript type",
+        "body": [
+            "export const rt${1} = rt.Record({});",
+            "",
+            "export type ${1} = rt.Static<typeof rt${1}>;"
+        ]
+    }
+}

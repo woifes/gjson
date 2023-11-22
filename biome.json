@@ -1,0 +1,36 @@
+{
+    "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+    "organizeImports": {
+        "enabled": true
+    },
+    "formatter": {
+        "enabled": true,
+        "indentStyle": "space",
+        "lineWidth": 80,
+        "indentWidth": 4,
+        "ignore": ["dist", "node_modules", "tsconfig*", "cspell*"]
+    },
+    "linter": {
+        "enabled": true,
+        "rules": {
+            "recommended": true,
+            "suspicious": {
+                "noExplicitAny": "off",
+                "noUnsafeDeclarationMerging": "off"
+            },
+            "style": {
+                "noNonNullAssertion": "off",
+                "noParameterAssign": "off"
+            },
+            "performance": {
+                "noDelete": "off"
+            }
+        },
+        "ignore": ["dist", "node_modules"]
+    },
+    "javascript": {
+        "parser": {
+            "unsafeParameterDecoratorsEnabled": true
+        }
+    }
+}

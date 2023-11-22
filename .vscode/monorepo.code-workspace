@@ -1,0 +1,42 @@
+{
+    "settings": {
+        "[typescript]": {
+            "editor.codeActionsOnSave": {
+                "source.organizeImports": true,
+                "source.organizeImports.biome": true
+            },
+            "editor.defaultFormatter": "biomejs.biome",
+            "editor.formatOnSave": true
+        },
+        "[javascript]": {
+            "editor.codeActionsOnSave": {
+                "source.organizeImports": true,
+                "source.organizeImports.biome": true
+            },
+            "editor.defaultFormatter": "biomejs.biome",
+            "editor.formatOnSave": true
+        },
+
+        "cSpell.allowCompoundWords": true,
+        "cSpell.ignoreWords": [
+            "runtype",
+            "woifes"
+        ],
+        "cSpell.ignorePaths": [
+            "pnpm-lock.yaml",
+            "biome.json",
+            "node_modules",
+            "vscode-extension",
+            ".git/objects",
+            ".vscode"
+        ]
+    },
+    "extensions": {
+        "recommendations": [
+            "gruntfuggly.todo-tree",
+            "pkief.material-icon-theme",
+            "biomejs.biome",
+            "streetsidesoftware.code-spell-checker"
+        ]
+    }
+}
